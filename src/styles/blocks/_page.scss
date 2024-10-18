@@ -1,0 +1,17 @@
+.page {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  &__aside {
+    margin-top: 72px;
+  }
+
+  &__body {
+    background-color: $bg-light;
+  }
+
+  &__content {
+    margin-top: 63px;
+  }
+}

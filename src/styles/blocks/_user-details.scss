@@ -1,0 +1,107 @@
+.user-ditails {
+  max-width: 350px;
+
+  &__top {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 34px;
+  }
+
+  &__img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+    @include on-tablet {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &__top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    max-width: 145px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 4px;
+    color: $text-color-dark-gray;
+
+    @include on-tablet {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__nick {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: $text-color-dark-gray;
+
+    @include on-tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__edit {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $text-color-light-red;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../images/icons/edit.svg');
+    }
+  }
+
+  &__statistics {
+    max-width: 286px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__statistics-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__statistics-num {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $text-color-dark-gray;
+  }
+
+  &__statistics-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-color-light-gray;
+  }
+
+  &__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: $text-color-light-gray;
+  }
+}

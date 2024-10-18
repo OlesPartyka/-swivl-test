@@ -1,0 +1,10 @@
+.main {
+  &__privacy {
+    margin-top: 15px;
+
+
+    @include on-desktop {
+      margin-top: 72px;
+    }
+  }
+}

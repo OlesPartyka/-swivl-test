@@ -1,0 +1,10 @@
+.content {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 246px;
+
+  @include on-desktop {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

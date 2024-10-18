@@ -1,0 +1,47 @@
+.privacy {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  gap: 20px;
+
+  &__switch {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    background-color: $bg-red;
+    width: 40px;
+    height: 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid $bg-red;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $main-white;
+      top: 50%;
+      left: 3px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__switch--active {
+
+    &::before {
+      left: auto;
+      right: 3px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: $text-color-light-gray;
+  }
+}
