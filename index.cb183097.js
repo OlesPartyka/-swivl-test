@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".privacy__switch"),t=document.querySelector(".dropdown__toggle"),c=document.querySelector(".dropdown");e.addEventListener("click",function(){e.classList.toggle("privacy__switch--active")}),t.addEventListener("click",function(){c.classList.toggle("dropdown--active")}),document.addEventListener("click",function(e){c.contains(e.target)||c.classList.remove("dropdown--active")})});
+//# sourceMappingURL=index.cb183097.js.map
